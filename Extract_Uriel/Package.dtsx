@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{F113D6BE-7CDA-4244-A271-BFCB0CDAA58C}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{F002FE14-6F51-4075-8DCB-12D632F618F6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -502,6 +502,10 @@ where [refTable].[CODE_PROFESSION] = ?</property>
           Size="128,42"
           Id="Package\Tâche de flux de données\Recherche"
           TopLeft="392,130" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Tâche de flux de données\Destination OLE DB"
+          TopLeft="384,243" />
         <EdgeLayout
           Id="Package\Tâche de flux de données.Paths[Sortie de source OLE DB]"
           TopLeft="453.5,74">
@@ -524,10 +528,6 @@ where [refTable].[CODE_PROFESSION] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Tâche de flux de données\Destination OLE DB"
-          TopLeft="384,243" />
         <EdgeLayout
           Id="Package\Tâche de flux de données.Paths[Sortie de recherche sans correspondance]"
           TopLeft="456,172">
@@ -567,5 +567,18 @@ where [refTable].[CODE_PROFESSION] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tâche de flux de données\Source OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

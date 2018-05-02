@@ -7,6 +7,10 @@
     DTS:Name="ServerName">@[$Project::ServeurName]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=;Initial Catalog=RC_ADN;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      DTS:ConnectionString="Data Source=;User ID=test;Initial Catalog=RC_ADN;Provider=SQLNCLI11.1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeZve7kCL+EK/8Jdm2g0kMgAAAAACAAAAAAAQZgAAAAEAACAAAABUshw5s+8PoJZOtqG2MCzS+UzlynoYxIJCooyGcL8gGQAAAAAOgAAAAAIAACAAAABlzWXOvvXRGgKjz+DdV9QXZp+z8Q09QcHId/TIGAchyoAAAAAduJyBp+z7tnXqqPPgPST8j2mo8U0Bs9GpRsMLoUDp14BBxZ8GWBat6YyHO2MQfVXumSQfBqdIQa1zVUoiV+KHM9pGrQQDn9b5tq781/m6w6S1Fc8zGvxzb7s+6Fi31kaib56fAuX/OwDNucVIhEctd40LtQMrgdXHLnHy8Wyfi0AAAADg5S38VD6TdB3qsoYpB5UfHhcQDY1KY8+vFmyoE4UdqUMvOX3yYe90+VMaVqEw7JgdSrFPzko22NemnNMmRPUS</DTS:Password>
+    </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
